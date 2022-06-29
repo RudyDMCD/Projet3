@@ -1,0 +1,158 @@
+html {
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    margin : 0px
+}
+
+.header {
+    padding: 16px;
+    box-shadow: 0 0 8px black;
+}
+
+.header img {
+    height: 32px;
+    display: block;
+    margin: auto;
+}
+
+.location {
+    display: flex;
+    justify-content: center;
+    padding: 20px 16px;
+    background-color: rgb(235, 235, 235);
+    font-size: 20px;
+}
+
+.location i {
+    margin-right: 16px;
+}
+
+.location-text {
+    font-weight: 700;
+}
+
+.explore {
+    padding: 32px;
+    text-align: center;
+    background-color: rgb(245, 245, 245);
+}
+
+.explore h1 {
+    margin: 0;
+}
+
+.explore p {
+    margin: 32px 0;
+}
+
+.explore-button {
+    background-color: black;
+    background-image: linear-gradient(0deg,#9356DC,#FF79DA);
+    color: white;
+    padding: 16px 24px;
+    border-radius: 100px;
+    box-shadow: 4px 4px 10px black;
+    font-weight: 600;
+    cursor: pointer;
+    transition-duration: 0.1s;
+}
+
+.functioning {
+    padding: 32px 16px;
+}
+
+.functioning-block h2 {
+    margin-top: 0;
+}
+
+.functioning-steps {
+    padding: 0;
+}
+
+.functioning-step {
+    background-color: rgb(245, 245, 245);
+    border-radius: 20px;
+    box-shadow: 4px 4px 8px black;
+    margin: 16px 0 16px 12px;
+    padding: 24px;
+}
+
+.functioning-step i {
+    margin-right: 16px;
+}
+
+.restaurant {
+    background-color: rgb(245, 245, 245);
+    padding: 32px 16px;
+}
+
+.cards {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between
+}
+
+.card {
+    background-color: white;
+    border-radius: 16px;
+    margin-bottom: 32px;
+}
+
+.card img {
+    height: 192px;
+    width: 100%;
+    border-radius: 16px 16px 0 0;
+    object-fit: cover;
+}
+
+.card-new {
+    background-color: #99E2D0;
+    padding: 4px;
+    color: darkgreen;
+    position: absolute;
+    margin: 16px 0 0 -88px;
+}
+
+.card-footer {
+    padding: 16px;
+}
+
+.card-text h3,p {
+    margin: 0 0 4px 0;
+}
+
+
+.footer {
+    background-color: rgb(50, 50, 50)
+}
+
+.footer-block {
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+}
+
+.footer-logo {
+    color: white;
+    font-family: 'Shrikhand', cursive;
+    font-size: 20px;
+    margin-bottom: 16px;
+}
+
+.footer-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-link {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-link i {
+    margin-right: 8px;
+    width: 20px;
+}
