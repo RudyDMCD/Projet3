@@ -5,11 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <title>ohmyfood</title>
-    <link rel="stylesheet" type="text/css" href="./css/style.css" media="all">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Shrikhand&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" type="text/css" href="./css/style.css" media="all">
 </head>
 
 <body>
@@ -17,6 +17,10 @@
     <header class="header">
         <img src="img/logo/ohmyfood.png" alt="ohmyfood">
     </header>
+
+    <div class="loader">
+        <i class="fas fa-spinner spinner"></i>
+    </div>
 
     <main>
 
@@ -38,14 +42,23 @@
                     <li class="functioning-step">
                         <i class="fas fa-mobile-alt"></i>
                         <span>Choisissez un restaurant</span>
+                        <div class="number-element">
+                            1
+                        </div>
                     </li>
                     <li class="functioning-step">
                         <i class="fas fa-list-ul"></i>
                         <span>Composez votre menu</span>
+                        <div class="number-element">
+                            2
+                        </div>
                     </li>
                     <li class="functioning-step">
                         <i class="fas fa-store"></i>
-                        <span>Dégustez au restaurant</span>
+                        <span class="taste">Dégustez au restaurant</span>
+                        <div class="number-element">
+                            3
+                        </div>
                     </li>
                 </ol>
             </div>
@@ -63,6 +76,10 @@
                                 <h3>La palette du goût</h3>
                                 <p>Ménilmontant</p>
                             </div>
+                            <div class="likeRestaurant">
+                                <i class="fas fa-heart like-icon"></i>
+                                <i class="far fa-heart unlike-icon"></i>
+                            </div>
                         </footer>
                     </a>
                     <a class="card" href="./restaurants/La note enchantée.html">
@@ -73,6 +90,10 @@
                                 <h3>La note enchantée</h3>
                                 <p>Charonne</p>
                             </div>
+                            <div class="likeRestaurant">
+                                <i class="fas fa-heart like-icon"></i>
+                                <i class="far fa-heart unlike-icon"></i>
+                            </div>
                         </footer>
                     </a>
                     <a class="card" href="./restaurants/A la francaise.html">
@@ -82,6 +103,10 @@
                                 <h3>À la française</h3>
                                 <p>Cité Rouge</p>
                             </div>
+                            <div class="likeRestaurant">
+                                <i class="fas fa-heart like-icon"></i>
+                                <i class="far fa-heart unlike-icon"></i>
+                            </div>
                         </footer>
                     </a>
                     <a class="card" href="./restaurants/Le délice des sens.html">
@@ -90,6 +115,10 @@
                             <div class="card-text">
                                 <h3>Le délice des sens</h3>
                                 <p>Folie-Méricourt</p>
+                            </div>
+                            <div class="likeRestaurant">
+                                <i class="fas fa-heart like-icon"></i>
+                                <i class="far fa-heart unlike-icon"></i>
                             </div>
                         </footer>
                     </a>

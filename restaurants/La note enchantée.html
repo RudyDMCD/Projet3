@@ -5,11 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <title>La note enchantée</title>
-    <link rel="stylesheet" type="text/css" href="./css/stylerestaurants.css" media="all">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Shrikhand&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" type="text/css" href="./css/stylerestaurants.css" media="all">
 </head>
 
 <body>
@@ -29,6 +29,10 @@
 
         <header class="menu-header">
             <h2 class="menu-title">La note enchantée</h2>
+            <div class="likeRestaurant">
+                <i class="fas fa-heart like-icon"></i>
+                <i class="far fa-heart unlike-icon"></i>
+            </div>
         </header>
 
         <div class="card">
@@ -36,92 +40,142 @@
             <section class="dishes">
                 <h3 class="dishes-title">Entrées</h3>
 
-                <section class="dish-choice">
-                    <div class="dish-header">
-                        <h4 class="dish-title">Ravioles de foie gras</h4>
-                        <p class="dish-detail">Accompagnés de leur crème à la truffe</p>
+                <section class="dish-container delay-0">
+                    <div class="dish-choice">
+                        <div class="dish-header">
+                            <h4 class="dish-title">Ravioles de foie gars</h4>
+                            <p class="dish-detail">Accompagnés de leur crème à la truffe</p>
+                        </div>
+                        <div class="dish-price">25€</div>
                     </div>
-                    <div class="dish-price">25€</div>
+                    <div class="confirm-container">
+                        <i class="fa-check fas confirm-icon"></i>
+                    </div>
                 </section>
 
-                <section class="dish-choice">
-                    <div class="dish-header">
-                        <h4 class="dish-title">Caviar osciètre</h4>
-                        <p class="dish-detail">Sur blini à la farine de blé noir</p>
+                <section class="dish-container delay-1">
+                    <div class="dish-choice">
+                        <div class="dish-header">
+                            <h4 class="dish-title">Caviar osciètre</h4>
+                            <p class="dish-detail">Sur blini à la farine de blé noir</p>
+                        </div>
+                        <div class="dish-price">35€</div>
                     </div>
-                    <div class="dish-price">35€</div>
+                    <div class="confirm-container">
+                        <i class="fa-check fas confirm-icon"></i>
+                    </div>
                 </section>
 
-                <section class="dish-choice">
-                    <div class="dish-header">
-                        <h4 class="dish-title">Homard et espuma de potiron</h4>
-                        <p class="dish-detail">Mariné aux zestes d'orange</p>
+                <section class="dish-container delay-2">
+                    <div class="dish-choice">
+                        <div class="dish-header">
+                            <h4 class="dish-title">Homard et espuma de potiron</h4>
+                            <p class="dish-detail">Mariné aux zestes d'orange</p>
+                        </div>
+                        <div class="dish-price">20€</div>
                     </div>
-                    <div class="dish-price">20€</div>
+                    <div class="confirm-container">
+                        <i class="fa-check fas confirm-icon"></i>
+                    </div>
                 </section>
 
-                <section class="dish-choice">
-                    <div class="dish-header">
-                        <h4 class="dish-title">Foie gras de canard cuit entier</h4>
-                        <p class="dish-detail">Confiture de figue et pain toasté</p>
+                <section class="dish-container delay-2">
+                    <div class="dish-choice">
+                        <div class="dish-header">
+                            <h4 class="dish-title">Foie gars de canard cuit entier</h4>
+                            <p class="dish-detail">Confiture de figue et pain toasté</p>
+                        </div>
+                        <div class="dish-price">35€</div>
                     </div>
-                    <div class="dish-price">35€</div>
+                    <div class="confirm-container">
+                        <i class="fa-check fas confirm-icon"></i>
+                    </div>
                 </section>
             </section>
 
             <section class="dishes">
                 <h3 class="dishes-title">Plats</h3>
 
-                <section class="dish-choice">
-                    <div class="dish-header">
-                        <h4 class="dish-title">Noix de coquilles Saint-Jacques</h4>
-                        <p class="dish-detail">Sur lit de purée de céleri-rave</p>
+                <section class="dish-container delay-3">
+                    <div class="dish-choice">
+                        <div class="dish-header">
+                            <h4 class="dish-title">Noix de coquilles Saint-Jacques</h4>
+                            <p class="dish-detail">Sur lit de purée de céleri-rave</p>
+                        </div>
+                        <div class="dish-price">40€</div>
                     </div>
-                    <div class="dish-price">40€</div>
+                    <div class="confirm-container">
+                        <i class="fa-check fas confirm-icon"></i>
+                    </div>
                 </section>
 
-                <section class="dish-choice">
-                    <div class="dish-header">
-                        <h4 class="dish-title">Langoustine poêlée</h4>
-                        <p class="dish-detail">Purée de patate douce</p>
+                <section class="dish-container delay-4">
+                    <div class="dish-choice">
+                        <div class="dish-header">
+                            <h4 class="dish-title">Langoustine poêlée</h4>
+                            <p class="dish-detail">Purée de patate douce</p>
+                        </div>
+                        <div class="dish-price">35€</div>
                     </div>
-                    <div class="dish-price">35€</div>
+                    <div class="confirm-container">
+                        <i class="fa-check fas confirm-icon"></i>
+                    </div>
                 </section>
 
-                <section class="dish-choice">
-                    <div class="dish-header">
-                        <h4 class="dish-title">Mijoté de queue de boeuf</h4>
-                        <p class="dish-detail">Et riz sauvage aux zestes de citron</p>
+                <section class="dish-container delay-5">
+                    <div class="dish-choice">
+                        <div class="dish-header">
+                            <h4 class="dish-title">Mijoté de queue de boeuf</h4>
+                            <p class="dish-detail">Et riz sauvage aux zestes de citron</p>
+                        </div>
+                        <div class="dish-price">44€</div>
                     </div>
-                    <div class="dish-price">44€</div>
+                    <div class="confirm-container">
+                        <i class="fa-check fas confirm-icon"></i>
+                    </div>
                 </section>
             </section>
 
             <section class="dishes">
                 <h3 class="dishes-title">Desserts</h3>
 
-                <section class="dish-choice">
-                    <div class="dish-header">
-                        <h4 class="dish-title">Macaron noisette et chocolat</h4>
-                        <p class="dish-detail">Glace au caramel brun et sel de Guérande</p>
+                <section class="dish-container delay-6">
+                    <div class="dish-choice">
+                        <div class="dish-header">
+                            <h4 class="dish-title">Macaron noisette et chocolat</h4>
+                            <p class="dish-detail">Glace au caramel brun et sel de Guérande</p>
+                        </div>
+                        <div class="dish-price">18€</div>
                     </div>
-                    <div class="dish-price">18€</div>
+                    <div class="confirm-container">
+                        <i class="fa-check fas confirm-icon"></i>
+                    </div>
                 </section>
 
-                <section class="dish-choice">
-                    <div class="dish-header">
-                        <h4 class="dish-title">Baba au rhum revisité</h4>
-                        <p class="dish-detail">Avec son coulis de citron</p>
+                <section class="dish-container delay-7">
+                    <div class="dish-choice">
+                        <div class="dish-header">
+                            <h4 class="dish-title">Baba au rhum revisté</h4>
+                            <p class="dish-detail">Avec son coulis de citron</p>
+                        </div>
+                        <div class="dish-price">22€</div>
                     </div>
-                    <div class="dish-price">22€</div>
+                    <div class="confirm-container">
+                        <i class="fa-check fas confirm-icon"></i>
+                    </div>
                 </section>
 
-                <section class="dish-choice">
-                    <div class="dish-header">
-                        <h4 class="dish-title">Tarte au citron meringuée</h4>
-                        <p class="dish-detail">Déstructurée</p>
+                <section class="dish-container delay-8">
+                    <div class="dish-choice">
+                        <div class="dish-header">
+                            <h4 class="dish-title">Tarte au citron meringuée</h4>
+                            <p class="dish-detail">Destructurée</p>
+                        </div>
+                        <div class="dish-price">23€</div>
                     </div>
-                    <div class="dish-price">23€</div>
+                    <div class="confirm-container">
+                        <i class="fa-check fas confirm-icon"></i>
+                    </div>
                 </section>
             </section>
         </div>
@@ -151,7 +205,7 @@
                     <a class="footer-link" href="#">Mentions légales</a>
                 </li>
                 <li>
-                    <a class="footer-link" href="#">Contact</a>
+                    <a class="footer-link" href="mailto:contact@ohmyfood.com">Contact</a>
                 </li>
             </ul>
         </div>

@@ -17,6 +17,42 @@ body {
     margin: auto;
 }
 
+.loader {
+    background-color: rgba(0, 0, O, 0.4);
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: cssAnimation 0s ease-in 3s forwards;
+}
+
+@keyframes cssAnimation {
+    to {
+        width: 0;
+        height: 0;
+        overflow: hidden;
+    }
+}
+
+.spinner {
+    font-size: 64px;
+    color: #9356DC;
+    animation: rotation 1s infinite linear;
+}
+
+@keyframes rotation {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(359deg);
+    }
+}
+
 .location {
     display: flex;
     justify-content: center;
@@ -53,10 +89,16 @@ body {
     color: white;
     padding: 16px 24px;
     border-radius: 100px;
-    box-shadow: 4px 4px 10px grey;
+    box-shadow: 4px 4px 10px gray;
     font-weight: 600;
     cursor: pointer;
     transition-duration: 0.1s;
+}
+
+.explore-button:hover {
+    background-color: white;
+    background-image: linear-gradient(0deg,#B456DC,#FF8CDA);
+    box-shadow: 4px 4px 10px black;
 }
 
 .functioning {
@@ -79,10 +121,35 @@ body {
     box-shadow: 4px 4px 8px grey;
     margin: 16px 0 16px 12px;
     padding: 24px;
+    position: relative;
 }
 
 .functioning-step i {
     margin-right: 16px;
+}
+
+.number-element {
+    position: absolute;
+    background-color: #9356DC;
+    height: 24px;
+    width: 24px;
+    border-radius: 50%;
+    color: white;
+    text-align: center;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    left: -12px;
+}
+
+.fa-store {
+    color: #9356DC;
+}
+
+.taste {
+    color: #9356DC;
 }
 
 .restaurant {
@@ -121,12 +188,47 @@ body {
 
 .card-footer {
     padding: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .card-text h3,p {
     margin: 0 0 4px 0;
 }
 
+.likeRestaurant {
+    font-size: 32px;
+    position: relative;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.fa-heart {
+    position: absolute;
+    right: 0;
+}
+
+.like-icon {
+    display: none;
+    color: #9356DC;
+}
+
+.likeRestaurant:hover .like-icon {
+    display: inline;
+    animation: fadeIn 1s;
+}
+
+.likeRestaurant:hover .unlike-icon {
+    display: none;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
 
 .footer {
     background-color: rgb(50, 50, 50)
