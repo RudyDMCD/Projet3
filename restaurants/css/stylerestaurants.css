@@ -53,12 +53,15 @@ body {
 
 .like-icon {
     display: none;
-    color: #9356DC;
 }
 
 .likeRestaurant:hover .like-icon {
     display: inline;
     animation: fadeIn 1s;
+    background: linear-gradient(#9356DC, #FF79DA);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
 }
 
 .likeRestaurant:hover .unlike-icon {
@@ -112,15 +115,27 @@ body {
     display: flex;
     cursor: pointer;
     flex-grow: 1;
+    width: 200px;
+}
+
+.dish-header {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .dish-title {
     margin: 0;
-
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .dish-detail {
     margin: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .dish-price {
@@ -287,11 +302,7 @@ body {
         min-width: 30%;
     }
 
-    .dish-container {
-        min-height: 24%;
-    }
-
     .order {
-        padding-top: 112px;
+        padding-top: 48px;
     }
 }
