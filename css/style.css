@@ -144,9 +144,6 @@ body {
     left: -12px;
 }
 
-.fa-store {
-    color: #9356DC;
-}
 
 .restaurant {
     background-color: rgb(250, 250, 250);
@@ -273,7 +270,19 @@ body {
     .functioning-step {
         min-width: 25%;
     }
+
+    .functioning-step:hover .fa-mobile-alt {
+        color: #9356DC;
+    }
     
+    .functioning-step:hover .fa-list-ul {
+        color: #9356DC;
+    }
+
+    .functioning-step:hover .fa-store {
+        color: #9356DC;
+    }
+
     .cards {
         flex-direction: row;
         flex-wrap: wrap;
